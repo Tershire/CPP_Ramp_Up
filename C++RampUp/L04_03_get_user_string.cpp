@@ -25,5 +25,15 @@ int main()
 	cout << "Song: ";
 	cin.getline(song, SIZE);
 
+	//
+	int year;
+	cout << "Release year: ";
+	// cin >> year; // also still works!
+	(cin >> year).get();
+
+	char label[SIZE];
+	cout << "Label: ";
+	cin >> label;
+	  
 	return 0;
 }
