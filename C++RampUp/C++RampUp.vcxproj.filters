@@ -75,5 +75,11 @@
     <ClCompile Include="L04_03_get_user_string.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="L04_07_string_class.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="L04_08_string_operations.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
