@@ -81,5 +81,14 @@
     <ClCompile Include="L04_08_string_operations.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="dd_character.h">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dd_character.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dd_play.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
