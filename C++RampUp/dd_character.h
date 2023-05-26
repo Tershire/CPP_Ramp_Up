@@ -17,22 +17,27 @@ class DD_Character
 {
 	// Private ================================================================
 	private:
-		std::string name;
-		int hit_points;
+		std::string name_;
+		int hit_points_;
 
 		// void announce_death(); // for Inline Method usage
 		void announce_death()
 		{
-			if (hit_points <= 0)
+			if (hit_points_ <= 0)
 			{
-				hit_points = 0;
+				hit_points_ = 0;
 				std::cout << "<!> Player Dead <!>\n";
 			}
 		}
 
 	// Public =================================================================
 	public:
-		void initialize(const std::string& NAME, int initial_hit_points);
+		// constructor --------------------------------------------------------
+		DD_Character();
+		DD_Character(const std::string& name, int hit_points);
+
+		// --------------------------------------------------------------------
+		void initialize(const std::string &name, int hit_points);
 
 		int take_damage(int damage);		
 };
@@ -41,9 +46,9 @@ class DD_Character
 // INLINE METHOD //////////////////////////////////////////////////////////////
 //inline void DD_Character::announce_death()
 //{
-//	if (hit_points <= 0)
+//	if (hit_points_ <= 0)
 //	{
-//		hit_points = 0;
+//		hit_points_ = 0;
 //		std::cout << "<!> Player Dead <!>\n";
 //	}
 //}

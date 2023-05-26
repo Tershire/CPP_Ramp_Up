@@ -10,13 +10,13 @@
 
 // CLASS MEMBER FUNCTIONS /////////////////////////////////////////////////////
 // ============================================================================
-void DD_Character::initialize(const std::string &NAME, int initial_hit_points)
+void DD_Character::initialize(const std::string &name, int hit_points)
 {
-	name = NAME; // name = name does not work
-	hit_points = initial_hit_points;
+	name_ = name; // name = name does not work
+	hit_points_ = hit_points;
 
-	std::cout << "Character: " << name << " starts with " 
-		      << hit_points << " hit points.\n";
+	std::cout << "Character: " << name_ << " starts with " 
+		      << hit_points_ << " hit points.\n";
 }
 
 // ============================================================================
@@ -24,11 +24,11 @@ int DD_Character::take_damage(int damage)
 {
 	using std::cout;
 
-	hit_points -= damage;
+	hit_points_ -= damage;
 	cout << "___________________________________________\n";
-	cout << name << " lost " << damage << " hit points!!\n";
+	cout << name_ << " lost " << damage << " hit points!!\n";
 	
 	announce_death();
 
-	return hit_points;
+	return hit_points_;
 }

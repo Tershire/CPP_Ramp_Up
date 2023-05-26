@@ -2,7 +2,6 @@
 // 2023 MAY 25
 // Tershire
 
-
 // HEADER FILE ////////////////////////////////////////////////////////////////
 #include <iostream>
 #include "dd_character.h"
