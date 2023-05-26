@@ -2,11 +2,33 @@
 // 2023 MAY 25
 // Tershire
 
-
 // HEADER FILE ////////////////////////////////////////////////////////////////
 #include <iostream>
 #include "dd_character.h"
 
+
+// CONSTRUCTOR ////////////////////////////////////////////////////////////////
+DD_Character::DD_Character() // default
+{
+	name_ = "Anonym";
+	hit_points_ = 1;
+}
+
+// Java style constructor chaining not working for C++<11
+//DD_Character::DD_Character(const std::string &name)
+//{
+//	DD_Character::DD_Character(name, 1)
+//}
+
+DD_Character::DD_Character(const std::string& name, int hit_points)
+{
+	if (name == "")
+	{
+		name_ = "Anonym";
+	}
+	name_ = name;
+	hit_points_ = hit_points;
+}
 
 // CLASS MEMBER FUNCTIONS /////////////////////////////////////////////////////
 // ============================================================================
@@ -25,7 +47,7 @@ int DD_Character::take_damage(int damage)
 	using std::cout;
 
 	hit_points_ -= damage;
-	cout << "___________________________________________\n";
+	cout << "____________________________________________\n";
 	cout << name_ << " lost " << damage << " hit points!!\n";
 	
 	announce_death();
