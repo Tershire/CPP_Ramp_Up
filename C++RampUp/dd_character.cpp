@@ -12,6 +12,9 @@ DD_Character::DD_Character() // default
 {
 	name_ = "Anonym";
 	hit_points_ = 1;
+
+	std::cout << "============================================\n";
+	std::cout << "<!> Constructed (default) <!> " << name_ << std::endl;
 }
 
 // Java style constructor chaining not working for C++<11
@@ -28,7 +31,19 @@ DD_Character::DD_Character(const std::string& name, int hit_points)
 	}
 	name_ = name;
 	hit_points_ = hit_points;
+
+	std::cout << "============================================\n";
+	std::cout << "<!> Constructed <!> " << name_ << std::endl;
 }
+
+
+// DESTRUCTOR /////////////////////////////////////////////////////////////////
+DD_Character::~DD_Character()
+{
+	std::cout << "============================================\n";
+	std::cout << "<!> Destructed <!> " << name_ << std::endl;
+}
+
 
 // CLASS MEMBER FUNCTIONS /////////////////////////////////////////////////////
 // ============================================================================

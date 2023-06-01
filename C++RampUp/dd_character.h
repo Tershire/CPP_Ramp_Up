@@ -36,6 +36,9 @@ class DD_Character
 		DD_Character();
 		DD_Character(const std::string& name, int hit_points);
 
+		// Destructor ---------------------------------------------------------
+		~DD_Character();
+
 		// --------------------------------------------------------------------
 		void initialize(const std::string &name, int hit_points);
 
