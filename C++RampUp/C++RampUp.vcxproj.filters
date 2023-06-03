@@ -81,14 +81,25 @@
     <ClCompile Include="L04_08_string_operations.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="dd_character.h">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="dd_character.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="dd_play.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="eva.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="eva_management.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dd_character.h">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="eva.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

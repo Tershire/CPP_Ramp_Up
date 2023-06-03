@@ -11,40 +11,64 @@
 // Constructor ================================================================
 Eva::Eva() // default
 {
+	id_ = 0;
 	pilot_ = "Anonym";
-	synapse_voltage_ = 0;
+	synapse_voltage_ = 0.0;
+	sync_rate_ = 0.0;
 
-	std::cout << "<!> Constructed (default) EVA-" << id_ << std::endl;
+	// unary + operator works <B> dependent on compiler
+	// std::cout << "<!> Constructed (default) EVA-" << +id_ << std::endl;
+	std::cout << "<!> Constructed (default) EVA-" << static_cast<int>(id_) 
+		      << std::endl;
 }
 
 Eva::Eva(unsigned char id, const std::string& pilot, double synapse_voltage)
 {
-	if (pilot == "")
-	{
-		pilot_ = "Anonym";
-	}
-	pilot_ = pilot;
+	id_ = id;
+	if (pilot == "") {pilot_ = "Anonym";}
+	else {pilot_ = pilot;}
 	synapse_voltage_ = synapse_voltage;
 
-	std::cout << "<!> Constructed EVA-" << id_ << std::endl;
+	std::cout << "<!> Constructed EVA-" << static_cast<int>(id_) << std::endl;
 }
 
 // Destructor =================================================================
 Eva::~Eva()
 {
-	std::cout << "<!> Destructed EVA-" << id_ << std::endl;
+	std::cout << "<!> Destructed EVA-" << static_cast<int>(id_) << std::endl;
 }
 
 
-// CLASS MEMBER FUNCTION //////////////////////////////////////////////////////
-void Eva::display_status()
+// PUBLIC MEMBER FUNCTION /////////////////////////////////////////////////////
+void Eva::display_status() const
 {
 	using namespace std;
 
 	cout << "______________________________________________________________\n"
-		 << "EVA-" << id_ << endl
+		 << "EVA-" << static_cast<int>(id_) << endl
 		 << "Pilot          : " << pilot_ << endl
 		 << "Synapse Voltage: " << synapse_voltage_ << endl
-		 << "Sync Rate      : " << sync_rate_ << endl
-		 << "______________________________________________________________\n";
+		 << "Sync Rate      : " << sync_rate_ << " %" << endl;
+		 
+	if (sync_rate_ <= 0)
+	{
+		cout << "<!> Cannot synchronize Eva to pilot <!>\n";
+	}
+	cout << "______________________________________________________________\n";
+}
+
+bool Eva::sync()
+{
+	sync_rate_ = get_sync_rate();
+
+	if (sync_rate_ <= 0) {return false;}
+	else {return true;}
+}
+
+const Eva &Eva::max_sync(const Eva &other) const // hard to understand
+{
+	std::cout << other.id_ << ": " << other.sync_rate_ << std::endl;
+	std::cout << id_ << ": " << sync_rate_ << std::endl;
+	if (other.sync_rate_ > sync_rate_) {return other;}
+	else {return *this;}
 }

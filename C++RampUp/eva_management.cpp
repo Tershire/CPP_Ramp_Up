@@ -7,12 +7,51 @@
 
 
 // MAIN ///////////////////////////////////////////////////////////////////////
-// ============================================================================
 int main()
 {
 	using namespace std;
 
-	Eva tershire;
+	// C+11 List Initialization & More! ---------------------------------------
+	Eva a{};
+	
+	Eva b{99};
+	b = 99; // possible for one-argument constructor -> may cause problems
+
+	Eva c{100, "Canny", 4.7};
+	c.sync();
+	c.display_status();
+
+	// Re-Assign --------------------------------------------------------------
+	Eva d = {101, "", 3.6};
+	d = Eva(101, "Dorian", 3.9);
+	
+	// const Object & const Function ------------------------------------------
+	const Eva e = {102, "Emma", 5.4};
+	// can't sync since sync() is not static
+	e.display_status();
+
+	// const Function ---------------------------------------------------------
+	Eva f = {103, "Fredrik", 2.1};
+	f.sync();
+	f.display_status();
+
+	// Dynamic Storage Object -------------------------------------------------
+	Eva* g = new Eva; // default
+
+	Eva* h = new Eva(104, "Herman", 7.8);
+	h->sync();
+	h->display_status();
+
+	Eva* l = new Eva{105}; // with list initialization
+
+	// destructor for dyn. storage obj.
+	delete g;
+	delete h;
+	delete l;
+
+	// this: comparing Eva objects --------------------------------------------
+	Eva s = (&f)->max_sync(*h);
+	s.display_status();
 
 	return 0;
 }
