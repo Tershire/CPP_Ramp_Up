@@ -46,7 +46,7 @@ int main()
 
 	// IO =====================================================================
 	cout << "Type what you want to say: ";
-	cin.getline(str_c, SIZE + 1);
+	cin.getline(str_c, SIZE + 1); // +1 just to see if SIZE can be modified
 	cout << "You said: " << str_c << " (length: " << strlen(str_c) << ")"  
 		 << endl;
 

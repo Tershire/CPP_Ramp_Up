@@ -96,6 +96,9 @@
     <ClCompile Include="dd_character.h">
       <Filter>Header Files</Filter>
     </ClCompile>
+    <ClCompile Include="L04_09_other_string_literals.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="eva.h">
