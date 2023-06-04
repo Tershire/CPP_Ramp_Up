@@ -1,4 +1,4 @@
-// L04_14_address_operator.cpp
+// L04_15_pointer.cpp
 // 2023 JUN 04
 // Tershire
 
@@ -12,13 +12,11 @@ int main()
 {
 	using namespace std;
 
-	int	int1 = 7;
-	double double1 = 1.2;
-	int int2 = 9;
+	int a = 6;
+	int* p_a = &a; // int*: int pointer
 
-	cout << "int1: " << int1 << " is @ " << &int1 << endl;
-	cout << "int1: " << double1 << " is @ " << &double1 << endl;
-	cout << "int2: " << int2 << " is @ " << &int2 << endl;
+	cout << "Value   of a: " <<  a << " == " << *p_a << endl;
+	cout << "Address of a: " << &a << " == " <<  p_a << endl;
 
 	return 0;
 }

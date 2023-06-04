@@ -99,6 +99,12 @@
     <ClCompile Include="L04_09_other_string_literals.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="L04_14_address_operator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="L04_15_pointer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="eva.h">
