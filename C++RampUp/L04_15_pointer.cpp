@@ -13,7 +13,7 @@ int main()
 	using namespace std;
 
 
-	// FUNDAMENTAL ============================================================
+	// Fundamental ============================================================
 	int a = 6;
 	int* p_a = &a; // int*: int pointer
 
@@ -31,6 +31,14 @@ int main()
 
 	cout << "Value   of b: " << *p_b << endl;
 	cout << "Address of b: " <<  p_b << endl;
+
+
+	// Pointer =/= int ========================================================
+	int* p_c;
+	//p_c = 0xB8000000; // not allowed
+	p_c = (int*) 0xB8000000;
+
+	cout << "p_c refers address: " << p_c << endl;
 
 	return 0;
 }
