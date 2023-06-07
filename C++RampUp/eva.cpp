@@ -67,11 +67,13 @@ bool Eva::sync()
 
 const Eva& Eva::max_sync(const Eva& other) const // hard to understand
 {
-	std::cout << "Sync rate: " <<       sync_rate_ << " for "
+	std::cout << "Sync rate: " <<       sync_rate_ << " % for "
 		      << "pilot: "     <<       pilot_ << std::endl;
-	std::cout << "Sync rate: " << other.sync_rate_ << " for "
+	std::cout << "Sync rate: " << other.sync_rate_ << " % for "
 		      << "pilot: "     << other.pilot_ << std::endl;
 
-	if (other.sync_rate_ > sync_rate_) {return other;}
-	else {return *this;}
+	if (other.sync_rate_ > sync_rate_)
+		return other;
+	else 
+		return *this;
 }
