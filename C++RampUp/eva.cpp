@@ -16,7 +16,7 @@ Eva::Eva() // default
 	synapse_voltage_ = 0.0;
 	sync_rate_ = 0.0;
 
-	// unary + operator works <B> dependent on compiler
+	// unary + operator works too <B> dependent on compiler -> static_cast<>()
 	// std::cout << "<!> Constructed (default) EVA-" << +id_ << std::endl;
 	std::cout << "<!> Constructed (default) EVA-" << static_cast<int>(id_) 
 		      << std::endl;
@@ -35,7 +35,7 @@ Eva::Eva(unsigned char id, const std::string& pilot, double synapse_voltage)
 // Destructor =================================================================
 Eva::~Eva()
 {
-	std::cout << "<!> Destructed EVA-" << static_cast<int>(id_) << std::endl;
+	std::cout << "<!> Destructed  EVA-" << static_cast<int>(id_) << std::endl;
 }
 
 
@@ -45,9 +45,9 @@ void Eva::display_status() const
 	using namespace std;
 
 	cout << "______________________________________________________________\n"
-		 << "EVA-" << static_cast<int>(id_) << endl
-		 << "Pilot          : " << pilot_ << endl
-		 << "Synapse Voltage: " << synapse_voltage_ << endl
+		 << "EVA-" << static_cast<int>(id_)           << endl
+		 << "Pilot          : " << pilot_             << endl
+		 << "Synapse Voltage: " << synapse_voltage_   << endl
 		 << "Sync Rate      : " << sync_rate_ << " %" << endl;
 		 
 	if (sync_rate_ <= 0)
@@ -68,7 +68,7 @@ bool Eva::sync()
 const Eva &Eva::max_sync(const Eva &other) const // hard to understand
 {
 	std::cout << other.id_ << ": " << other.sync_rate_ << std::endl;
-	std::cout << id_ << ": " << sync_rate_ << std::endl;
+	std::cout <<       id_ << ": " <<       sync_rate_ << std::endl;
 	if (other.sync_rate_ > sync_rate_) {return other;}
 	else {return *this;}
 }
