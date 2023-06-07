@@ -1,4 +1,4 @@
-// dd_character.cpp
+// eva.cpp
 // 2023 JUN 02
 // Tershire
 
@@ -65,10 +65,13 @@ bool Eva::sync()
 	else {return true;}
 }
 
-const Eva &Eva::max_sync(const Eva &other) const // hard to understand
+const Eva& Eva::max_sync(const Eva& other) const // hard to understand
 {
-	std::cout << other.id_ << ": " << other.sync_rate_ << std::endl;
-	std::cout <<       id_ << ": " <<       sync_rate_ << std::endl;
+	std::cout << "Sync rate: " <<       sync_rate_ << " for "
+		      << "pilot: "     <<       pilot_ << std::endl;
+	std::cout << "Sync rate: " << other.sync_rate_ << " for "
+		      << "pilot: "     << other.pilot_ << std::endl;
+
 	if (other.sync_rate_ > sync_rate_) {return other;}
 	else {return *this;}
 }

@@ -1,8 +1,9 @@
 // eva_management.cpp
-// 2023 JUN 002
+// 2023 JUN 02
 // Tershire
 
 // HEADER FILE ////////////////////////////////////////////////////////////////
+#include <iostream>
 #include "eva.h"
 
 
@@ -24,6 +25,8 @@ int main()
 	// Re-Assign --------------------------------------------------------------
 	Eva d = {101, "", 3.6};
 	d = Eva(101, "Dorian", 3.9);
+	d.sync();
+	d.display_status();
 	
 	// const Object & const Function ------------------------------------------
 	const Eva e = {102, "Emma", 5.4};
@@ -32,7 +35,6 @@ int main()
 
 	// const Function ---------------------------------------------------------
 	Eva f = {103, "Fredrik", 2.1};
-	f.sync();
 	f.display_status();
 
 	// Dynamic Storage Object -------------------------------------------------
@@ -50,7 +52,8 @@ int main()
 	delete l;
 
 	// this: comparing Eva objects --------------------------------------------
-	Eva s = (&f)->max_sync(*h);
+	Eva s = c.max_sync(d); // ? why I dont't have to do: const Eva s
+	cout << "Current Max Sync Rate is Achieved by:\n";
 	s.display_status();
 
 	return 0;

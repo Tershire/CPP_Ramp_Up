@@ -111,6 +111,9 @@
     <ClCompile Include="L04_0X_two_pointers_delete.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="L04_0X_pointer_and_reference.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="eva.h">

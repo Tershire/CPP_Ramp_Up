@@ -35,7 +35,7 @@ class Eva
 		void display_status() const; // promise not to modify the obj.
 		bool sync();
 
-		// return address (not copy usually returned by 'return')
+		// return reference [Eva&] (not copy usually returned by 'return')
 		// of object Eva which has the max sync_rate
 		// (const ...) promises that max_sync() will not modify the
 		//             EXPLICITELY accessed obj.
