@@ -13,6 +13,18 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\ch02">
+      <UniqueIdentifier>{8c8e8532-8398-4c7d-800f-b0e58ff1b8b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ch03">
+      <UniqueIdentifier>{1c6b64c3-01a0-472c-ad19-1787cbbe8e50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ch04">
+      <UniqueIdentifier>{98ba6c27-2b33-4faf-8d42-271983477f4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ch10">
+      <UniqueIdentifier>{03a02c59-ba30-449c-ab96-619ba3029e4e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="my_first.cpp">
@@ -21,104 +33,104 @@
     <ClCompile Include="my_second.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="L02_02_balls.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="L02_03_ask_balls.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="L02_04_sqrt.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="L02_05_my_function.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="L03_01_limits.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="L03_03_number_base.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="L03_02_overflow_underflow.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="L03_06_char.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="L03_07_IDAS_login.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="L03_0X_wchar_t_test.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="L03_0X_char_t_test.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="L03_08_floating_numbers_test.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="L03_09_float_problem.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="L03_13_demotion.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="L03_14_type_cast.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="L04_01_array.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="L04_02_string.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="L04_03_get_user_string.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="L04_07_string_class.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="L04_08_string_operations.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="dd_character.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="dd_play.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="eva.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="eva_management.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="dd_character.h">
       <Filter>Header Files</Filter>
     </ClCompile>
-    <ClCompile Include="L04_09_other_string_literals.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="L02_02_balls.cpp">
+      <Filter>Source Files\ch02</Filter>
     </ClCompile>
-    <ClCompile Include="L04_14_address_operator.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="L02_03_ask_balls.cpp">
+      <Filter>Source Files\ch02</Filter>
     </ClCompile>
-    <ClCompile Include="L04_15_pointer.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="L02_04_sqrt.cpp">
+      <Filter>Source Files\ch02</Filter>
     </ClCompile>
-    <ClCompile Include="L04_17_pointer_dynamic_memory.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="L02_05_my_function.cpp">
+      <Filter>Source Files\ch02</Filter>
     </ClCompile>
-    <ClCompile Include="L04_0X_two_pointers_delete.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="L03_0X_char_t_test.cpp">
+      <Filter>Source Files\ch03</Filter>
     </ClCompile>
-    <ClCompile Include="L04_0X_pointer_and_reference.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="L03_0X_wchar_t_test.cpp">
+      <Filter>Source Files\ch03</Filter>
     </ClCompile>
-    <ClCompile Include="eva_array_management.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="L03_01_limits.cpp">
+      <Filter>Source Files\ch03</Filter>
+    </ClCompile>
+    <ClCompile Include="L03_02_overflow_underflow.cpp">
+      <Filter>Source Files\ch03</Filter>
+    </ClCompile>
+    <ClCompile Include="L03_03_number_base.cpp">
+      <Filter>Source Files\ch03</Filter>
+    </ClCompile>
+    <ClCompile Include="L03_06_char.cpp">
+      <Filter>Source Files\ch03</Filter>
+    </ClCompile>
+    <ClCompile Include="L03_07_IDAS_login.cpp">
+      <Filter>Source Files\ch03</Filter>
+    </ClCompile>
+    <ClCompile Include="L03_08_floating_numbers_test.cpp">
+      <Filter>Source Files\ch03</Filter>
+    </ClCompile>
+    <ClCompile Include="L03_09_float_problem.cpp">
+      <Filter>Source Files\ch03</Filter>
+    </ClCompile>
+    <ClCompile Include="L03_13_demotion.cpp">
+      <Filter>Source Files\ch03</Filter>
+    </ClCompile>
+    <ClCompile Include="L03_14_type_cast.cpp">
+      <Filter>Source Files\ch03</Filter>
     </ClCompile>
     <ClCompile Include="L04_0X_pointer_and_const.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\ch04</Filter>
+    </ClCompile>
+    <ClCompile Include="L04_0X_pointer_and_reference.cpp">
+      <Filter>Source Files\ch04</Filter>
+    </ClCompile>
+    <ClCompile Include="L04_0X_two_pointers_delete.cpp">
+      <Filter>Source Files\ch04</Filter>
+    </ClCompile>
+    <ClCompile Include="L04_01_array.cpp">
+      <Filter>Source Files\ch04</Filter>
+    </ClCompile>
+    <ClCompile Include="L04_02_string.cpp">
+      <Filter>Source Files\ch04</Filter>
+    </ClCompile>
+    <ClCompile Include="L04_03_get_user_string.cpp">
+      <Filter>Source Files\ch04</Filter>
+    </ClCompile>
+    <ClCompile Include="L04_07_string_class.cpp">
+      <Filter>Source Files\ch04</Filter>
+    </ClCompile>
+    <ClCompile Include="L04_08_string_operations.cpp">
+      <Filter>Source Files\ch04</Filter>
+    </ClCompile>
+    <ClCompile Include="L04_09_other_string_literals.cpp">
+      <Filter>Source Files\ch04</Filter>
+    </ClCompile>
+    <ClCompile Include="L04_14_address_operator.cpp">
+      <Filter>Source Files\ch04</Filter>
+    </ClCompile>
+    <ClCompile Include="L04_15_pointer.cpp">
+      <Filter>Source Files\ch04</Filter>
+    </ClCompile>
+    <ClCompile Include="L04_17_pointer_dynamic_memory.cpp">
+      <Filter>Source Files\ch04</Filter>
+    </ClCompile>
+    <ClCompile Include="dd_character.cpp">
+      <Filter>Source Files\ch10</Filter>
+    </ClCompile>
+    <ClCompile Include="dd_play.cpp">
+      <Filter>Source Files\ch10</Filter>
+    </ClCompile>
+    <ClCompile Include="eva.cpp">
+      <Filter>Source Files\ch10</Filter>
+    </ClCompile>
+    <ClCompile Include="eva_array_management.cpp">
+      <Filter>Source Files\ch10</Filter>
+    </ClCompile>
+    <ClCompile Include="eva_management.cpp">
+      <Filter>Source Files\ch10</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
