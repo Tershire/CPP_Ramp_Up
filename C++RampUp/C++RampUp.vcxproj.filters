@@ -25,6 +25,9 @@
     <Filter Include="Source Files\ch10">
       <UniqueIdentifier>{03a02c59-ba30-449c-ab96-619ba3029e4e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\ch11">
+      <UniqueIdentifier>{27356454-0808-4b49-a3fc-29178a6031dc}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="my_first.cpp">
@@ -132,9 +135,18 @@
     <ClCompile Include="eva_management.cpp">
       <Filter>Source Files\ch10</Filter>
     </ClCompile>
+    <ClCompile Include="timer.cpp">
+      <Filter>Source Files\ch11</Filter>
+    </ClCompile>
+    <ClCompile Include="timer_management.cpp">
+      <Filter>Source Files\ch11</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="eva.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="timer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
