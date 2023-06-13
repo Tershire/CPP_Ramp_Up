@@ -33,7 +33,10 @@ void Timer::show()
 	std::cout << hour_ << " hours " << minute_ << " minutes\n";
 }
 
-Timer Timer::operator+(Timer& other) // can't return ref. <R> destructed out {}
+
+// opterator overloading ------------------------------------------------------
+Timer Timer::operator+(const Timer& other) // can't return ref.
+                                           // <R> destructed out {}
 {
 	Timer sum;
 	
@@ -45,7 +48,7 @@ Timer Timer::operator+(Timer& other) // can't return ref. <R> destructed out {}
 	return sum;
 }
 
-Timer Timer::operator-(Timer& other)
+Timer Timer::operator-(const Timer& other)
 {
 	Timer diff;
 
@@ -69,4 +72,23 @@ Timer Timer::operator*(double k)
 	total_time.minute_ = total_min % 60;
 
 	return total_time;
+}
+
+// Friend =====================================================================
+// opterator overloading ------------------------------------------------------
+//Timer operator*(double k, const Timer& timer)
+//{
+//	Timer total_time;
+//
+//	long total_min = k * (timer.hour_ * 60 + timer.minute_);
+//
+//	total_time.hour_   = total_min / 60;
+//	total_time.minute_ = total_min % 60;
+//
+//	return total_time;
+//}
+
+Timer operator*(double k, const Timer& timer)
+{
+	return timer * k;
 }

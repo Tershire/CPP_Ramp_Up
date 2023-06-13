@@ -32,8 +32,13 @@ int main()
 	Timer diff = studying - working_out;
 	diff.show();
 
-	Timer total_time = working_out * 7;
-	total_time.show();
+
+	Timer total_time_1 = working_out * 7;
+	total_time_1.show();
+
+	// friend
+	Timer total_time_2 = 7 * working_out;
+	total_time_2.show();
 
 	return 0;
 }

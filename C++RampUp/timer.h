@@ -24,9 +24,14 @@ class Timer
 		void show();
 		
 		// operator overloading
-		Timer operator+(Timer& other);
-		Timer operator-(Timer& other);
+		Timer operator+(const Timer& other);
+		Timer operator-(const Timer& other);
 		Timer operator*(double k);
+
+		// friend
+		//friend Timer operator*(double k, const Timer& timer);
+
+		friend Timer operator*(double k, const Timer& timer);
 };
 
 #endif
