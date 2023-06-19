@@ -6,7 +6,6 @@
 #ifndef TIMER_H_
 #define TIMER_H_
 
-
 // CLASS //////////////////////////////////////////////////////////////////////
 class Timer
 {
@@ -21,17 +20,20 @@ class Timer
 
 		// --------------------------------------------------------------------
 		void reset();
-		void show();
+		void show() const;
 		
 		// operator overloading
-		Timer operator+(const Timer& other);
-		Timer operator-(const Timer& other);
-		Timer operator*(double k);
+		Timer operator+(const Timer& other) const;
+		Timer operator-(const Timer& other) const;
+		Timer operator*(double k) const;
 
 		// friend
 		//friend Timer operator*(double k, const Timer& timer);
 
 		friend Timer operator*(double k, const Timer& timer);
+
+		friend std::ostream& operator<<(std::ostream& out_stream, 
+			                            const Timer& timer);
 };
 
 #endif

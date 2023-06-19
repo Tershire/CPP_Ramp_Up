@@ -28,15 +28,15 @@ void Timer::reset()
 	minute_ = 0;
 }
 
-void Timer::show()
+void Timer::show() const
 {
 	std::cout << hour_ << " hours " << minute_ << " minutes\n";
 }
 
 
 // opterator overloading ------------------------------------------------------
-Timer Timer::operator+(const Timer& other) // can't return ref.
-                                           // <R> destructed out {}
+Timer Timer::operator+(const Timer& other) const // can't return ref.
+												 // <R> destructed out {}
 {
 	Timer sum;
 	
@@ -48,7 +48,7 @@ Timer Timer::operator+(const Timer& other) // can't return ref.
 	return sum;
 }
 
-Timer Timer::operator-(const Timer& other)
+Timer Timer::operator-(const Timer& other) const
 {
 	Timer diff;
 
@@ -62,7 +62,7 @@ Timer Timer::operator-(const Timer& other)
 	return diff;
 }
 
-Timer Timer::operator*(double k)
+Timer Timer::operator*(double k) const
 {
 	Timer total_time;
 
@@ -91,4 +91,11 @@ Timer Timer::operator*(double k)
 Timer operator*(double k, const Timer& timer)
 {
 	return timer * k;
+}
+
+std::ostream& operator<<(std::ostream& out_stream, const Timer& timer)
+{
+	out_stream << timer.hour_ << " hours " << timer.minute_ << " minutes";
+
+	return out_stream;
 }

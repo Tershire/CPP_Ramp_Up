@@ -40,5 +40,8 @@ int main()
 	Timer total_time_2 = 7 * working_out;
 	total_time_2.show();
 
+	// <<
+	std::cout << "Time I spent for studying: " << studying << std::endl;
+
 	return 0;
 }
