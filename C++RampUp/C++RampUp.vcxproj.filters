@@ -141,6 +141,12 @@
     <ClCompile Include="timer_management.cpp">
       <Filter>Source Files\ch11</Filter>
     </ClCompile>
+    <ClCompile Include="L04_11_structure.cpp">
+      <Filter>Source Files\ch04</Filter>
+    </ClCompile>
+    <ClCompile Include="L04_1X_union.cpp">
+      <Filter>Source Files\ch04</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="eva.h">
