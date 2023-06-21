@@ -147,6 +147,9 @@
     <ClCompile Include="L04_1X_union.cpp">
       <Filter>Source Files\ch04</Filter>
     </ClCompile>
+    <ClCompile Include="L04_24_array_alternatives.cpp">
+      <Filter>Source Files\ch04</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="eva.h">
