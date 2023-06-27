@@ -4,6 +4,7 @@
 
 // HEADER FILE ////////////////////////////////////////////////////////////////
 #include <iostream>
+#include <fstream>
 #include <cstdlib> // rand(), srand()
 #include <ctime> // time()
 #include "vector.h"
@@ -17,7 +18,7 @@ int main()
 	using tervect::Vector;
 
 	// Setting ================================================================
-	srand(time(0));
+	srand(time(0)); // random generator by time-based seed
 
 	double direction;
 
@@ -27,6 +28,9 @@ int main()
 	unsigned long num_steps = 0;
 	double step_distance;
 	double target_distance;
+
+	ofstream f_out;
+	f_out.open("randomwalk.txt");
 	
 
 	// Main ===================================================================
@@ -59,6 +63,9 @@ int main()
 			 << position.mag() / num_steps << endl;
 		cout << "----------------------------------------------------------\n";
 
+		// save data ----------------------------------------------------------
+		f_out << position << endl;
+
 		// initialization -----------------------------------------------------
 		position.set(0.0, 0.0);
 		num_steps = 0;
@@ -71,6 +78,8 @@ int main()
 	cin.clear();
 	while (cin.get() != '\n')
 		continue;
+
+	f_out.close();
 
 	return 0;
 }
