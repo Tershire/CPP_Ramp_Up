@@ -150,12 +150,21 @@
     <ClCompile Include="L04_24_array_alternatives.cpp">
       <Filter>Source Files\ch04</Filter>
     </ClCompile>
+    <ClCompile Include="vector.cpp">
+      <Filter>Source Files\ch11</Filter>
+    </ClCompile>
+    <ClCompile Include="vector_randomwalk.cpp">
+      <Filter>Source Files\ch11</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="eva.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="timer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vector.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
