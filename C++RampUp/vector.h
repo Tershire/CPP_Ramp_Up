@@ -1,4 +1,4 @@
-// Vector.h
+// vector.h
 // 2023 JUN 26
 // Tershire
 

@@ -156,6 +156,12 @@
     <ClCompile Include="vector_randomwalk.cpp">
       <Filter>Source Files\ch11</Filter>
     </ClCompile>
+    <ClCompile Include="height.cpp">
+      <Filter>Source Files\ch11</Filter>
+    </ClCompile>
+    <ClCompile Include="height_measurement.cpp">
+      <Filter>Source Files\ch11</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="eva.h">
@@ -165,6 +171,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="vector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="height.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
