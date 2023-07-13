@@ -17,14 +17,14 @@ void display(const Height& height, int n);
 int main()
 {
 	// initiation -------------------------------------------------------------
-	Height alice = 69.3;		// implicit conversion using Height(double)
+	Height alice = 69.3;		 // implicit conversion using Height(double)
 
-	Height bob(61);				// explicit conversion equivalent to bob = 61;
-	Height boby = Height(62.7); // explicit conversion <M+>
-	Height benn = (Height)63;	// explicit conversion <M+>
+	Height bob(61);				 // explicit conversion equivalent to bob = 61;
+	Height boby = Height(62.7);  // explicit conversion <M+>
+	Height benn = (Height) 63;	 // explicit conversion <M+>
 
-	Height charlie(6, 2.4);		// constructor
-	Height david(4, 8);			// constructor: implicit conversion 8 -> 8.0
+	Height charlie(6, 2.4);		 // constructor
+	Height david(4, 8);			 // constructor: implicit conversion 8 -> 8.0
 
 	// measurements -----------------------------------------------------------
 	cout << "Alice  : ";
@@ -46,6 +46,7 @@ int main()
 	display(alice, 1);	// <- re-assigned
 	cout << "Charlie:\n";
 	display(77, 3);     // <- re-assign using implicit conversion
+						//    int 77 converts to type Height
 
 	return 0;
 }

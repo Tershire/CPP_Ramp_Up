@@ -26,13 +26,17 @@ public:
 	// constructor & destructor -----------------------------------------------
 	Height();
 	explicit Height(int feet);			// approximate height only
-	//explicit Height(double inch);		// only type casts will work
+	// explicit Height(double inch);	// only type casts will work (explicit)
 	Height(double inch);
 	Height(int feet, double inch);
 
 	// ------------------------------------------------------------------------
 	void show_feet() const;
 	void show_inch() const;
+
+	// conversion function ----------------------------------------------------
+	         operator double() const;
+	explicit operator	 int() const;
 };
 
 #endif

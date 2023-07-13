@@ -50,3 +50,14 @@ void Height::show_inch() const
 {
 	cout << inch_ << " inches\n";
 }
+
+// conversion function --------------------------------------------------------
+Height::operator double() const
+{
+	return inch_;
+}
+
+Height::operator int() const
+{
+	return int (inch_ + 0.5); // to round rather than truncate
+}
