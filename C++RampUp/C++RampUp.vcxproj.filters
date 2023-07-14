@@ -28,6 +28,9 @@
     <Filter Include="Source Files\ch11">
       <UniqueIdentifier>{27356454-0808-4b49-a3fc-29178a6031dc}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\ch13">
+      <UniqueIdentifier>{75e0cd60-5716-45e0-b1ed-cda86647342f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="my_first.cpp">
@@ -165,6 +168,12 @@
     <ClCompile Include="height_conversion.cpp">
       <Filter>Source Files\ch11</Filter>
     </ClCompile>
+    <ClCompile Include="human.cpp">
+      <Filter>Source Files\ch10</Filter>
+    </ClCompile>
+    <ClCompile Include="human_world.cpp">
+      <Filter>Source Files\ch10</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="eva.h">
@@ -177,6 +186,15 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="height.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="human.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="eye.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ear.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
