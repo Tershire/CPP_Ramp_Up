@@ -31,6 +31,9 @@
     <Filter Include="Source Files\ch13">
       <UniqueIdentifier>{75e0cd60-5716-45e0-b1ed-cda86647342f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\ch05">
+      <UniqueIdentifier>{f2011b20-d6fc-4e10-b672-d2c5c55142ae}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="my_first.cpp">
@@ -179,6 +182,12 @@
     </ClCompile>
     <ClCompile Include="stack_management.cpp">
       <Filter>Source Files\ch10</Filter>
+    </ClCompile>
+    <ClCompile Include="L05_04_factorial.cpp">
+      <Filter>Source Files\ch05</Filter>
+    </ClCompile>
+    <ClCompile Include="L05_XX_full_expression.cpp">
+      <Filter>Source Files\ch05</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
