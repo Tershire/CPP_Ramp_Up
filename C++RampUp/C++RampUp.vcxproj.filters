@@ -189,6 +189,9 @@
     <ClCompile Include="L05_XX_full_expression.cpp">
       <Filter>Source Files\ch05</Filter>
     </ClCompile>
+    <ClCompile Include="L04_1X_enumeration.cpp">
+      <Filter>Source Files\ch04</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="eva.h">
