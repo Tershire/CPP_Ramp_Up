@@ -192,6 +192,9 @@
     <ClCompile Include="L04_1X_enumeration.cpp">
       <Filter>Source Files\ch04</Filter>
     </ClCompile>
+    <ClCompile Include="L05_XX_pointer_increment_decrement.cpp">
+      <Filter>Source Files\ch05</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="eva.h">
