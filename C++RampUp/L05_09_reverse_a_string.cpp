@@ -10,9 +10,9 @@ int main()
 {
 	std::string word = "stressed";
 	char temp;
-	int i, j;
+	// int i, j;
 	
-	for (i = 0, j = word.size(); i < j; ++i, --j)
+	for (int i = 0, j = word.size(); i < j; ++i, --j)
 	{
 		temp = word[i];
 		word[i] = word[j];
